@@ -1,0 +1,329 @@
+.section-share{
+    &.section-specialty{
+        background: #faeeee;
+    }
+
+    &.section-outstanding-doctor{
+        background: #faeeee;
+    }
+
+    &.section-about{
+        height: 500px !important;
+        background: #faeeee;
+    }
+
+    .section-body{
+        .section-customize{
+            .bg-image{
+                height: 200px;
+                width: 310px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #eee;
+
+                &.section-specialty{
+                    // background-image: url(../../assets/specialty/co-xuong-khop.jpg);
+                }
+
+                &.section-medical-facility{
+                    // background-image: url(../../assets/medical-facility/lo-go-viet-duc.jpg);
+                    border: 1px solid #ddd;
+                    background-size: contain !important;
+                    background-color: #fff;
+                }
+
+                &.section-outstanding-doctor{
+                    // background-image: url(../../assets/doctor/anh-dai-dien-bs.jpg);
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook{
+                    background-image: url(../../assets/handbook/163557-dat-lich-cham-soc-wecare247.png);
+                }
+            }
+        }        
+    }
+}
+
+.section-outstanding-doctor{
+    .outer-bg{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    .section-customize{
+        padding: 0 12px 0 3px;
+        cursor: pointer;
+
+        .customize-border{
+            border: 1px solid orange;
+            padding: 20px;
+        }
+    }
+}
+
+.section-about{
+    padding: 0 310px;
+
+    .section-about-header{
+        padding: 20px 10px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .section-about-content{
+        display: flex;
+        gap: 24px;
+        width: 100%;
+
+        .content-left{
+            width: 60%;
+        }
+
+        .content-right{
+            width: 40%;
+
+            p{
+                text-align: justify;
+                font-size: 16px;
+                font-style: italic;
+                padding: 16px;
+            }
+        }
+    }
+}
+
+.home-footer{
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 16px;
+    
+    a{
+        text-decoration: unset;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
+.section-share{
+    height: 400px;
+    
+    .section-container{
+        margin: 0 310px;
+        display: flex;
+        flex-direction: column;
+
+        .section-header{
+            height: 60px;
+            margin-bottom: 50px;
+            padding-top: 40px;
+
+            .title-section{
+                font-size: 26px;
+                font-weight: 600;
+            }
+
+            .btn-section{
+                float: right;
+                padding: 12px 24px;
+                border: none;
+                outline: none;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+                margin-right: 12px;
+
+                &:hover{
+                    background: #f7d800;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+            //custom slick slider css
+            .slick-prev{
+                left: -12px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover{
+                    background: #f7eeee !important;
+                }
+            }
+
+            .slick-prev:before, .slick-next:before{
+                font-family: FontAwesome !important;
+                color: red !important;
+            }
+
+            .slick-next{
+                right: -12px !important;
+                z-index: 1000 !important;
+                height: 48px !important;
+                width: 44px !important;
+                background: #fff !important;
+
+                &:hover{
+                    background: #f7eeee !important;
+                }
+            }
+
+            .slick-disabled{
+                display: none !important;
+            }
+
+
+.label-chatbox{
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+  height: 55px;
+  width: 55px;
+  background: #4070F4;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 0.4s ease;
+}
+
+label i.fas{
+  opacity: 0;
+  pointer-events: none;
+}
+
+#click:checked ~ label i.fas{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+#click:checked ~ label i.fab{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+
+#click:checked ~ .chatbot{
+  opacity: 1;
+  bottom: 85px;
+  pointer-events: auto;
+}
+
+#click{
+  display: none;
+}
+
+
+.chatbot {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 2%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+    .react-chatbot-kit-chat-container {
+    width: 350px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+    margin-left: 10px;
+}
+
+.react-chatbot-kit-chat-bot-message {
+    background-color: #61045F;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+    border-right: 8px solid #61045F;
+}
+
+.react-chatbot-kit-chat-btn-send {
+    background-color: #61045F;
+}
+
+.ADE img {
+    background-color: #AA076B;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 100%;
+}
+
+.start-btn {
+    background-color: #61045F;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.slow-btn {
+    margin-left: 1rem;
+}
+
+.img-component {
+    margin-left: 3rem;
+    position: relative;
+}
+
+.img-container {
+    width: 185px;
+    height: 185px;
+    border: 2px solid #61045F;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-component a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: #61045F;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+.img-component a:hover {
+    background-color: #61045f5e;
+}
+}
+

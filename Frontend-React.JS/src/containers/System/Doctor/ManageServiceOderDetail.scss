@@ -1,0 +1,28 @@
+.manage-service-container{
+    padding: 10px;
+
+    .manage-service-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 15px 0;
+        color: #0071ba;
+    }
+
+    .more-service-info{
+        display: flex;
+        gap: 15px;
+        margin: 0px 50px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+
+        .content-left{
+            width: 40%;
+        }
+
+        .content-right{
+            width: 60%;
+        }
+    }
+}
